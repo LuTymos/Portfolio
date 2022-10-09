@@ -1,0 +1,162 @@
+// Colors
+$roxo-escuro: #371B58;
+$cor-fonte: #EBEBEB;
+$azul: #1B2430;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $azul;
+}
+
+header{
+    width: 100%;
+    padding: 20px 3%;
+    height: 70px;
+    background-color: $roxo-escuro;
+
+
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        // container logo
+        .logo{
+            width: 250px;
+            h4{color: $cor-fonte;}
+        }
+
+
+        // container btn-menu
+        .btn-menu{
+            width: 30px;
+            i{
+            color: $cor-fonte; 
+            font-size: 22px;
+            cursor: pointer;
+        }
+        }
+
+
+        // container Menu
+        .menu{
+            display: none;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            height: 240px;
+            background-color: $azul;
+            top: 70px;
+            left: 0;
+            padding: 15px 0;
+            ul li {
+                margin: 15px 0;
+                a{
+                    text-decoration: none;
+                    color: $cor-fonte;
+                }
+            }
+        }
+    }
+}
+
+main{
+    .quem_sou{
+        .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        
+        
+        //conteiner sobre_mim nome 
+        .nome{
+            padding-top: 40px;
+            margin-top: 30px;
+            min-height: 150px;
+            background-color: $roxo-escuro;
+            .center{
+                width: 200px;
+                margin: 0 auto;
+                h2{
+                    color: $cor-fonte;
+                }
+                p{
+                    color:$cor-fonte;
+                }
+            }   
+        }
+
+        // sobre_min Sobre
+        .sobre{
+            width: 100%;
+            padding: 30px 30px;
+            min-height: 250px;
+            background-color: $roxo-escuro;
+            h3{
+                color: $cor-fonte;
+            }
+            p{
+                color:$cor-fonte;
+            }
+        }
+        }
+    }
+
+    // Skills
+    .skills{
+        margin-top: 30px;
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: $roxo-escuro;
+            min-height: 250px;
+            padding: 30px 40px;
+            h3{
+                color: $cor-fonte;
+            }
+        
+        .group_skills{
+            width: 300px;
+            margin: 0 auto;
+            display: flex;
+            margin-top: 25px;
+            flex-wrap: wrap;
+            i{
+                font-size: 55px;
+                margin: 0 10px;
+            }
+            .fa-html5{
+                color: orangered;
+            }
+            .fa-css3-alt{
+                color: #0082b1;
+            }
+            .fa-square-js{
+                color: yellow;
+            }
+            .fa-bootstrap{
+                color: #563d7c;
+            }
+            .fa-react{
+                color: #61dafb;
+            }
+            .fa-node-js{
+                color: #026e00;
+            }
+        }
+        }
+    }
+
+
+
+
+
+}
+

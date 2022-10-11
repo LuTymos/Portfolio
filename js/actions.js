@@ -1,3 +1,3 @@
 $('.fa-bars-staggered').click(function(){
-    $('.menu').slideToggle()
+    $('.menu-mobile').slideToggle()
 })

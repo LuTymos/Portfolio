@@ -23,11 +23,25 @@ header {
         color: #EBEBEB; }
     header .container .btn-menu {
       width: 30px; }
+      @media screen and (min-width: 840px) {
+        header .container .btn-menu {
+          display: none; } }
       header .container .btn-menu i {
         color: #EBEBEB;
         font-size: 22px;
         cursor: pointer; }
-    header .container .menu {
+    @media screen and (max-width: 840px) {
+      header .container .menu-desktop {
+        display: none; } }
+    header .container .menu-desktop ul {
+      display: flex; }
+    header .container .menu-desktop ul li {
+      list-style: none;
+      margin: 0 15px; }
+      header .container .menu-desktop ul li a {
+        text-decoration: none;
+        color: #EBEBEB; }
+    header .container .menu-mobile {
       display: none;
       position: absolute;
       width: 100%;
@@ -37,21 +51,35 @@ header {
       top: 70px;
       left: 0;
       padding: 15px 0; }
-      header .container .menu ul li {
+      header .container .menu-mobile ul li {
         margin: 15px 0; }
-        header .container .menu ul li a {
+        header .container .menu-mobile ul li a {
           text-decoration: none;
           color: #EBEBEB; }
 
+@media screen and (min-width: 840px) {
+  main .quem_sou {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center; } }
 main .quem_sou .container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex; }
+  main .quem_sou .container .row {
+    justify-content: center; }
   main .quem_sou .container .nome {
     padding-top: 40px;
     margin-top: 30px;
     min-height: 150px;
     background-color: #371B58; }
+    @media screen and (min-width: 840px) {
+      main .quem_sou .container .nome {
+        max-height: 120px;
+        max-width: 40%;
+        padding-top: 20px;
+        align-self: center; } }
     main .quem_sou .container .nome .center {
       width: 200px;
       margin: 0 auto; }
@@ -64,6 +92,11 @@ main .quem_sou .container {
     padding: 30px 30px;
     min-height: 250px;
     background-color: #371B58; }
+    @media screen and (min-width: 840px) {
+      main .quem_sou .container .sobre {
+        padding-top: 20px;
+        align-self: center;
+        max-width: 40%; } }
     main .quem_sou .container .sobre h3 {
       color: #EBEBEB; }
     main .quem_sou .container .sobre p {
@@ -71,7 +104,7 @@ main .quem_sou .container {
 main .skills {
   margin-top: 30px; }
   main .skills .container {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     background-color: #371B58;
     min-height: 250px;
@@ -99,5 +132,32 @@ main .skills {
         color: #61dafb; }
       main .skills .container .group_skills .fa-node-js {
         color: #026e00; }
+main .projetos {
+  margin-top: 30px; }
+  main .projetos .container h3 {
+    color: white; }
+  main .projetos .container .row .projeto-single {
+    cursor: pointer;
+    margin: 10px auto;
+    max-width: 350px;
+    background-color: #371B58;
+    padding: 20px; }
+    main .projetos .container .row .projeto-single .card-body h5 {
+      color: #EBEBEB; }
+    main .projetos .container .row .projeto-single .card-body p {
+      color: #EBEBEB; }
+
+footer {
+  margin-top: 40px;
+  background-color: #371B58;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  text-align: center; }
+  footer i {
+    color: #EBEBEB;
+    font-size: 40px;
+    margin: 0 10px; }
 
 /*# sourceMappingURL=global.css.map */

@@ -113,7 +113,9 @@ main .skills {
     margin: 0 auto;
     background-color: #371B58;
     min-height: 250px;
-    padding: 30px 40px; }
+    padding: 30px 40px; 
+    border-radius: 15px;
+  }
     main .skills .container h3 {
       color: #EBEBEB; }
     main .skills .container .group_skills {
@@ -142,7 +144,6 @@ main .projetos {
   main .projetos .container h3 {
     color: white; }
   main .projetos .container .row .projeto-single {
-    cursor: pointer;
     margin: 10px auto;
     max-width: 350px;
     background-color: #371B58;
@@ -165,4 +166,6 @@ footer {
     font-size: 40px;
     margin: 0 10px; }
 
+
+    .btn-projeto{}
 /*# sourceMappingURL=global.css.map */

@@ -407,6 +407,12 @@ main .projetos .projeto-single img{
   height: 250px;
 }
 
+@media screen and (min-width:720px) {
+  main .projeto-single img{
+    height: 200px;
+  }
+}
+
 main .projetos .projeto-single .card-text{
   height: 120px;
 }

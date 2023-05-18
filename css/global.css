@@ -355,24 +355,40 @@ main .projetos {
   margin-top: 30px;
 }
 
+main .projetos .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
 main .projetos .container h3 {
   color: white;
 }
 
 main .projetos .container .row .projeto-single {
-  margin: 10px auto;
-  max-width: 350px;
-  background-color: #371B58;
-  padding: 20px;
+  margin: 10px 0;
+  
+  background-color: rgba(36, 39, 52, .35);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(29, 32, 44, 0.37);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  color: var(--cor-do-texto);
+  padding: 10px;
 }
 
-main .projetos .container .row .projeto-single .card-body h5 {
-  color: #EBEBEB;
+main .projetos .projeto-single img{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 250px;
 }
 
-main .projetos .container .row .projeto-single .card-body p {
-  color: #EBEBEB;
+main .projetos .projeto-single .card-text{
+  height: 120px;
 }
+
 
 footer {
   margin-top: 40px;

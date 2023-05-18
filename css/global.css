@@ -252,6 +252,11 @@ main .skills {
   margin-top: 30px;
 }
 
+main .skill:hover{
+  transform: scale(1.1);
+  
+}
+
 main .skills .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -302,6 +307,7 @@ main .skills .container .row .sessao_skills h3::after {
 }
 
 main .skills .container .group_skills {
+  padding: 20px 0;
   width: 70%;
   margin: 0 auto;
   display: flex;
@@ -334,11 +340,11 @@ main .skills .container .group_skills .skill {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  transition: 0.3s;
 
-
-  -webkit-box-shadow: 3px 14px 73px -26px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 3px 14px 73px -26px rgba(0, 0, 0, 0.75);
-  box-shadow: 3px 14px 73px -26px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 14px 73px -26px rgba(36, 39, 52, .75);
+  -moz-box-shadow: 3px 14px 73px -26px rgba(36, 39, 52, .75);
+  box-shadow: 3px 14px 73px -26px rgba(28, 30, 39, 0.35);
 }
 
 main .skills .container .group_skills i {
